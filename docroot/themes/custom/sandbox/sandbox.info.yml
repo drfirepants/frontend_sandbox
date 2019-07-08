@@ -1,0 +1,28 @@
+name: Sandbox
+type: theme
+description: 'Learning theme.'
+core: 8.x
+libraries:
+  - sandbox/global-styling
+base theme: classy
+
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer
+
+# Pattern twig namespaces.
+component-libraries:
+  atoms:
+    paths:
+      - sandbox/source/_patterns/atoms
+  molecules:
+    paths:
+      - sandbox/source/_patterns/molecules
+  organisms:
+    paths:
+      - sandbox/source/_patterns/organisms
+  pages:
+    paths:
+      - sandbox/source/_patterns/pages
