@@ -1,11 +1,12 @@
 project:
   machine_name: frontend_sandbox
   prefix: BLT
-  human_name: 'BLTed 10'
+  human_name: 'Frontend Sandbox'
   profile:
     name: lightning
   local:
-    hostname: '${env.VIRTUAL_HOST}'
+      protocol: http
+      hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
   remotes: {  }
